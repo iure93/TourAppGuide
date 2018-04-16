@@ -11,24 +11,37 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="Home">
+            android:label="TourAppGuide">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MonumentsActivity"
+        <activity
+            android:name=".MonumentsActivity"
             android:label="Monuments" />
-
-        <activity android:name=".RestaurantActivity"
-            android:label="Restaurant"/>
-
-        <activity android:name=".BarActivity"
-            android:label="Bar"/>
-
-        <activity android:name=".ServiceActivity"
-            android:label="Service"/>
+        <activity
+            android:name=".RestaurantActivity"
+            android:label="Restaurant" />
+        <activity
+            android:name=".BarActivity"
+            android:label="Bar" />
+        <activity
+            android:name=".ServiceActivity"
+            android:label="Service" />
+        <activity
+            android:name=".DetailBarActivity"
+            android:label="Bar" />
+        <activity
+        android:name=".DetailMonumentActivity"
+        android:label="Monument" />
+        <activity
+            android:name=".DetailRestaurantActivity"
+            android:label="Restaurant" />
+        <activity
+            android:name=".DetailServiceActivity"
+            android:label="Service" />
     </application>
 
 </manifest>
