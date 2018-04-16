@@ -18,13 +18,15 @@ public class BarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.object_list);
 
-        // Create a list of item
-        items.add(new Item("Maialotto", R.drawable.gradiscahome));
-        items.add(new Item("Caffè Emopoli", R.drawable.gradiscahome));
-        items.add(new Item("Caffè Centrale", R.drawable.gradiscahome));
-        items.add(new Item("Caffè Teatro", R.drawable.gradiscahome));
-        items.add(new Item("Bar Lovento", R.drawable.gradiscahome));
-        items.add(new Item("Da cris", R.drawable.gradiscahome));
+        if (items.size() == 0) {
+            // Create a list of item
+            items.add(new Item("Maialotto", R.drawable.gradiscahome));
+            items.add(new Item("Caffè Emopoli", R.drawable.gradiscahome));
+            items.add(new Item("Caffè Centrale", R.drawable.gradiscahome));
+            items.add(new Item("Caffè Teatro", R.drawable.gradiscahome));
+            items.add(new Item("Bar Lovento", R.drawable.gradiscahome));
+            items.add(new Item("Da cris", R.drawable.gradiscahome));
+        }
 
         // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
@@ -45,8 +47,8 @@ public class BarActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent barIntent = new Intent(BarActivity.this, DetailBarActivity.class);
 
-                barIntent.putExtra("position", position);
-                barIntent.putExtra("items", items);
+              /*  barIntent.putExtra("position", position);
+                barIntent.putExtra("items", items);*/
 
                 startActivity(barIntent);
             }
