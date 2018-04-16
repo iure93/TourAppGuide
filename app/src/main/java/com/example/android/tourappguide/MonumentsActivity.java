@@ -25,7 +25,7 @@ public class MonumentsActivity extends AppCompatActivity {
         items.add(new Item("Polveriera Veneta", R.drawable.gradiscahome));
         items.add(new Item("Galleria d’arte Luigi Spazzapan", R.drawable.gradiscahome));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
         ItemAdapter adapter = new ItemAdapter(this, items, R.color.category_monument);
 

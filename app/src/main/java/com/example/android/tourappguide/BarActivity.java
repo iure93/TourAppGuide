@@ -26,7 +26,7 @@ public class BarActivity extends AppCompatActivity {
         items.add(new Item("Bar Lovento", R.drawable.gradiscahome));
         items.add(new Item("Da cris", R.drawable.gradiscahome));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link ItemAdapter}, whose data source is a list of {@link Item}s. The
         // adapter knows how to create list items for each item in the list.
         ItemAdapter adapter = new ItemAdapter(this, items, R.color.category_bar);
 
@@ -35,8 +35,8 @@ public class BarActivity extends AppCompatActivity {
         // word_list.xml layout file.
         ListView listView = (ListView) findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link ItemAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Item} in the list.
         listView.setAdapter(adapter);
 
         // Set an item click listener for ListView
